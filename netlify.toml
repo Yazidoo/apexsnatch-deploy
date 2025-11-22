@@ -1,5 +1,9 @@
 [build]
     functions = "functions"
+    command = "echo 'Starting build...'"
 
+[context.production.environment]
+    PYTHON_VERSION = "3.8" 
+    
 [functions]
     snatch_alert = { schedule = "0 6 * * *" }
