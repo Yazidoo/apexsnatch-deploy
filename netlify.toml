@@ -1,0 +1,6 @@
+[build]
+    functions = "functions"
+
+[functions]
+    inclusions = [ "snatch_alert" ]
+    schedule = "0 6 * * *"
