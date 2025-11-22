@@ -1,6 +1,9 @@
 [build]
     functions = "functions"
 
-[functions]
-    inclusions = [ "snatch_alert" ]
-    schedule = "0 6 * * *"
+[[plugins]]
+package = "@netlify/plugin-functions-core"
+
+[plugins.inputs.scheduling]
+functions = ["snatch_alert"]
+schedule = "0 6 * * *"
